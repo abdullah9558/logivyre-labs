@@ -1,0 +1,5 @@
+import {HttpClient} from '@angular/common/http';
+import {Component,inject,signal} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+@Component({selector:'app-root',imports:[FormsModule],templateUrl:'./app.html',styleUrl:'./app.css'})
+export class App{private http=inject(HttpClient);product='SimplePOS';version='1.0.6';apiUrl='http://localhost:3000';adminKey='';file?:File;status=signal('Ready to publish a release.');busy=signal(false);choose(e:Event){this.file=(e.target as HTMLInputElement).files?.[0]}publish(){if(!this.file||!this.product||!this.version||!this.adminKey){this.status.set('Complete every field and choose an installer.');return}const data=new FormData();data.set('product',this.product);data.set('version',this.version);data.set('file',this.file);this.busy.set(true);this.status.set('Uploading installer…');this.http.post(`${this.apiUrl}/api/releases`,data,{headers:{'x-admin-key':this.adminKey}}).subscribe({next:()=>{this.status.set('Release published successfully.');this.busy.set(false)},error:e=>{this.status.set(e.error?.error||'Upload failed. Check the server and key.');this.busy.set(false)}})}}
