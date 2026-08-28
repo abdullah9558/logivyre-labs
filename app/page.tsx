@@ -9,7 +9,7 @@ const products = [
 ];
 
 function Arrow(){return <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>}
-function BrandLogo({footer=false}:{footer?:boolean}){return <span className={`brand-logo${footer?' footer-logo':''}`}><img className="logo-light" src="/logivyre-logo-light.png" alt="Logivyre Labs"/><img className="logo-dark" src="/logivyre-logo-dark.png" alt="" aria-hidden="true"/></span>}
+function BrandLogo({footer=false}:{footer?:boolean}){return <span className={`brand-logo${footer?' footer-logo':''}`}><img className="logo-light" src="/logivyre-logo-light.png" alt="Logivyre Labs"/><span className="logo-dark-composite" aria-hidden="true"><img src="/logivyre-mark-dark.png" alt=""/><span className="logo-dark-type"><strong>LOGIVYRE</strong><small><i/>LABS<i/></small></span></span></span>}
 
 export default function Home(){return <main>
   <FuturisticEffects/><div className="ambient-grid" aria-hidden="true"/><div className="cursor-glow" id="cursor-glow" aria-hidden="true"/>
