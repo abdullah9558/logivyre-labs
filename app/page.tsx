@@ -4,8 +4,8 @@ import ThemeToggle from './theme-toggle';
 
 const products = [
   { id:'mera-markaz', eyebrow:'Personal finance · Android', title:'Mera Markaz', description:'A bilingual finance and utility companion built for Pakistan—expenses, bills, fuel, encrypted backup and practical AI guidance in one calm place.', image:'/projects/mera-markaz-thumbnail.png', accent:'mint', tags:['Flutter','Firebase','Gemini','Urdu'] },
-  { id:'testmind-ai', eyebrow:'Quality engineering · Web', title:'TestMind AI', description:'An AI-assisted quality engineering workspace that turns requirements, telemetry and screen recordings into structured test coverage and automation starters.', image:'/projects/testmind-dashboard.png', accent:'violet', tags:['React','Node.js','Gemini','GitHub'] },
-  { id:'simplepos', eyebrow:'Retail operations · Windows', title:'SimplePOS', description:'An offline-first desktop point-of-sale system with multi-store inventory, checkout, customer balances and optional cloud synchronization.', image:'/projects/simplepos/dashboard.png', accent:'amber', tags:['Electron','React','SQLite','Node.js'] },
+  { id:'testmind-ai', eyebrow:'Quality engineering · Web', title:'TestMind AI', description:'An AI-assisted quality engineering workspace that turns requirements, telemetry and screen recordings into structured test coverage and automation starters.', image:'/projects/testmind-banner.png', accent:'violet', tags:['React','Node.js','Gemini','GitHub'] },
+  { id:'simplepos', eyebrow:'Retail operations · Windows', title:'SimplePOS', description:'An offline-first desktop point-of-sale system with multi-store inventory, checkout, customer balances and optional cloud synchronization.', image:'/projects/simplepos-banner.png', accent:'amber', tags:['Electron','React','SQLite','Node.js'] },
 ];
 
 function Arrow(){return <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>}

@@ -15,7 +15,7 @@ const projects={
     gallery:[['/projects/mera-markaz/welcome.jpeg','Welcome and sign-in experience'],['/projects/mera-markaz-thumbnail.png','Mera Markaz product identity'],['/projects/mera-markaz-logo.png','Application brand mark']]
   },
   'testmind-ai':{
-    title:'TestMind AI',type:'AI-assisted quality engineering',platform:'Responsive web application',status:'Functional full-stack MVP',image:'/projects/testmind/dashboard.png',intro:'Turn product context into test coverage that teams can understand, execute and improve.',
+    title:'TestMind AI',type:'AI-assisted quality engineering',platform:'Responsive web application',status:'Functional full-stack MVP',image:'/projects/testmind-banner.png',intro:'Turn product context into test coverage that teams can understand, execute and improve.',
     body:'TestMind AI connects test planning, execution and engineering output. Requirements, product descriptions, telemetry and screen recordings become reviewable test coverage instead of disconnected documents and manual checklists.',
     challenge:'QA teams lose time translating the same product intent across test cases, execution tools, automation frameworks and issue trackers. TestMind AI keeps those artifacts connected while preserving human review at every important step.',
     features:['AI test generation from stories and specifications','Timestamped multimodal screen-recording analysis','Editable test library with execution states','Playwright, Cypress and Selenium starters','Bug reporting and diagnostic telemetry parsing','GitHub OAuth, repository publishing and pull requests','Project dashboards and persisted analytics','Groq routing with Gemini fallback for large inputs'],
@@ -25,7 +25,7 @@ const projects={
     gallery:[['/projects/testmind/dashboard.png','Project dashboard and QA overview'],['/projects/testmind/recording-analysis.png','Screen-recording analysis workspace'],['/projects/testmind-logo.png','TestMind AI identity']]
   },
   simplepos:{
-    title:'SimplePOS',type:'Offline-first desktop point of sale',platform:'Windows desktop',status:'Installer available · v1.0.6',image:'/projects/simplepos/dashboard.png',intro:'Fast retail operations that keep working—even when the connection does not.',
+    title:'SimplePOS',type:'Offline-first desktop point of sale',platform:'Windows desktop',status:'Installer available · v1.0.6',image:'/projects/simplepos-banner.png',intro:'Fast retail operations that keep working—even when the connection does not.',
     body:'SimplePOS is a practical desktop point-of-sale system for multi-store retailers. Checkout remains fast and reliable through a local-first data model, while an optional cloud service synchronizes shared business information when connectivity is available.',
     challenge:'Retail checkout cannot stop because a connection drops. SimplePOS writes sales locally first and queues cloud mutations, preserving the speed and certainty of desktop software while still supporting centralized multi-store operations.',
     features:['Offline-first checkout and local SQLite storage','Multi-store inventory and scoped stock levels','Products, categories, customers and suppliers','Sales history, refunds and printable receipts','Purchase orders and customer balances','Role-based admin, manager and cashier access','Reports, backup and restore workflows','Optional PostgreSQL cloud synchronization'],
