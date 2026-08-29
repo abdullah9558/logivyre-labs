@@ -30,4 +30,4 @@ html[data-theme="dark"] .hero-lede,html[data-theme="dark"] .section-heading>p,ht
 @media(max-width:680px){.brand-logo{width:140px;height:38px}.theme-label{display:none}.theme-toggle{width:38px;padding:0;justify-content:center}.nav-actions{gap:8px}}@media(max-width:520px){.nav-links .theme-toggle{display:inline-flex}.nav-links{gap:7px}.brand-logo{width:122px}.nav-links .nav-cta{padding-inline:10px}}
 
 /* Cinematic project banners */
-.project-visual img[src*="-banner.png"],.detail-image img[src*="-banner.png"]{width:100%;height:100%;max-height:none;object-fit:cover;filter:none}.project-visual:hover img[src*="-banner.png"]{transform:scale(1.025)}
+.project-visual.banner-visual,.detail-image.banner-detail{height:auto;aspect-ratio:16/9;background:#07101e}.project-visual img[src*="-banner.png"],.detail-image img[src*="-banner.png"]{width:100%;height:100%;max-height:none;object-fit:contain;filter:none}.project-visual:hover img[src*="-banner.png"]{transform:scale(1.012)}
